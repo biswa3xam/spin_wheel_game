@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bilbo_swash_caps"
+        android:gravity="center"
+        android:text="@string/spin_to_win_the_game"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/wheel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/wheelspiner"
+        android:src="@drawable/wheel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.64"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintWidth_percent="0.82" />
+
+    <ImageView
+        android:id="@+id/belt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/wheelspiner"
+        android:src="@drawable/belt"
+        app:layout_constraintBottom_toBottomOf="@id/wheel"
+        app:layout_constraintEnd_toEndOf="@id/wheel"
+        app:layout_constraintHeight_percent="0.70"
+        app:layout_constraintStart_toStartOf="@id/wheel"
+        app:layout_constraintTop_toTopOf="@id/wheel"
+        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintWidth_percent="0.94" />
+
+
+    <TextView
+        android:id="@+id/winningText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/winningamount"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="@string/you_won_0_points"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wheel" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

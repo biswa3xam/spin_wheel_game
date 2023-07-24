@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Kriffy Spin Wheel</string>
+    <string name="wheelspiner">WheelSpiner</string>
+    <string name="winningamount">winningAmount</string>
+    <string name="spin_to_win_the_game">Spin to win the game!</string>
+    <string name="you_won_0_points">You won 0 points</string>
+</resources>
